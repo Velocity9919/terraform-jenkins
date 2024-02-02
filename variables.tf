@@ -6,7 +6,7 @@ variable "key_name" {
   default = "YOUR_KEY_NAME"                  # Names of key in aws
 }
 variable "private_key" {
-  default = file("YOUR_PRIVATE_KEY_PEM_FILE_PATH")      # file path of private pem key
+  default = "YOUR_PRIVATE_KEY_PEM_FILE_PATH"      # file path of private pem key
 }
 
 variable "access_key" {
