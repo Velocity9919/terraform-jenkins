@@ -25,7 +25,7 @@ tags = {
  connection {
     type     = "ssh"
     user     = "ubuntu"
-    private_key = var.private_key
+    private_key = file(var.private_key)
     host     = self.public_ip
   }
 
