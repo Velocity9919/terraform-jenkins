@@ -46,12 +46,13 @@ This Terraform configuration automates the setup of a Jenkins server on an AWS E
    ```bash
    cd your-project
 
-3. Fill in the required information in main.tf
-   ``bash
+3. Fill in the required information in variables.tf:
+   ```bash
    access_key = "YOUR_AWS_ACCESS_KEY"
    secret_key = "YOUR_AWS_SECRET_KEY"
    key_name = "YOUR_AWS_KEY_PAIR_NAME"
-   private_key_path = "PATH_TO_YOUR_PRIVATE_KEY_FILE"
+   private_key = file("PATH_TO_YOUR_PRIVATE_KEY_FILE")
+
 
 4. Initialize Terraform:
    ```bash
