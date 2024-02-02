@@ -1,4 +1,3 @@
 output "public_ip" {
-    value =  aws_instance.myvm.public_ip
-  
+    value =  aws_instance.Jenkins_server.public_ip
 }
