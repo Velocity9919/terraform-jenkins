@@ -14,7 +14,7 @@ provider "aws" {
   secret_key = var.secret_key
 }
 
-resource "aws_instance" "myvm" {
+resource "aws_instance" "Jenkins_server" {
 ami = "ami-0c7217cdde317cfec"  
 instance_type = "t2.micro"
 security_groups = [ "default" ]
